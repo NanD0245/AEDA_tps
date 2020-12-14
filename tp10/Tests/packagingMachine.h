@@ -5,7 +5,6 @@
 #include <vector>
 #include <stack>
 #include <iostream>
-#include <algorithm>
 #include "box.h"
 using namespace std;
 

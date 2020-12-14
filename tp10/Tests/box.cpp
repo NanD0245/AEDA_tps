@@ -50,22 +50,18 @@ bool Object::operator<(const Object& o1) const {
 }
 
 bool Box::operator<(const Box& b1) const {
-	return getFree() > b1.getFree();
+	return free > b1.getFree();
 }
 
 string Box::printContent() const {
+    if (objects.empty()) return "Box " +to_string(id)+" empty!\n";
+    ostringstream ss;
+    ss << "Box " << to_string(id) << " [ ";
     StackObj objs = objects;
-    stringstream s;
-    if (objs.empty()) {
-        s << "Box " << id << " empty!" << endl;
-        return s.str();
-    }
-
-    s << "Box " << id << " " << "[ ";
-    while (!objs.empty()) {
-        s << objs.top() << " ";
+    while(!objs.empty()) {
+        ss << objs.top() << " ";
         objs.pop();
     }
-    s << "]";
-    return s.str();
+    ss << "]";
+	return ss.str();
 }

@@ -140,7 +140,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/googletest-master/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -148,6 +148,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/aeda2021_p09.dir/DependInfo.cmake"
   "lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "lib/googletest-master/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

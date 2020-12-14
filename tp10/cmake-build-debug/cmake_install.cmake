@@ -1,4 +1,4 @@
-# Install script for directory: /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10
+# Install script for directory: /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
+  include("/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

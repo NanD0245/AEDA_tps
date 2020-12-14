@@ -6,25 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/box.cpp
-box.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/box.h
-sstream
--
-
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/box.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/Tests/box.h
 stack
 -
 iostream
 -
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/packagingMachine.cpp
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/Tests/packagingMachine.cpp
 packagingMachine.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/packagingMachine.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/Tests/packagingMachine.h
 sstream
 -
+set
+-
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/packagingMachine.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/Tests/packagingMachine.h
 queue
 -
 vector
@@ -33,8 +29,6 @@ stack
 -
 iostream
 -
-algorithm
--
 box.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/Tests/box.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/Tests/box.h
 

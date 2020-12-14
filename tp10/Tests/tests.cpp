@@ -70,6 +70,7 @@ TEST(test, b_searchBox){
     EXPECT_EQ(false, isEmp);
     if (isEmp==false)
         EXPECT_EQ(1,boxesH.top().getFree());
+
     bx = machine.searchBox( objects[4] );
     bx.addObject( objects[4] );
     machine.addBox( bx );
@@ -83,9 +84,7 @@ TEST(test, b_searchBox){
 
     bx = machine.searchBox( objects[5] );
     bx.addObject( objects[5] );
-    cout << machine.numberOfBoxes() << endl;
     machine.addBox( bx );
-    cout << machine.numberOfBoxes() << endl;
     cout << "Free in Box " << bx.getID() << ": " << bx.getFree() << endl;
     EXPECT_EQ(3, machine.numberOfBoxes()); // 10 9 7
     boxesH= machine.getBoxes();
@@ -93,6 +92,7 @@ TEST(test, b_searchBox){
     EXPECT_EQ(false, isEmp);
     if (isEmp==false)
         EXPECT_EQ(0,boxesH.top().getFree());
+
     bx = machine.searchBox( objects[6] );
     bx.addObject( objects[6] );
     machine.addBox( bx );
@@ -176,7 +176,7 @@ TEST(test, e_ConteudoBox){
     Box::resetID();
 
     Box b1(10);
-    EXPECT_EQ("Box 1 empty!\n",     b1.printContent());
+    EXPECT_EQ("Box 1 empty!\n", b1.printContent());
 
     b1.addObject( objects[0] );
     b1.addObject( objects[1] );
@@ -186,7 +186,6 @@ TEST(test, e_ConteudoBox){
 
 
 TEST(test, f_BoxMoreObjects){
-
     vector<Object> objects;
     objects.push_back(Object(1, 2)); objects.push_back(Object(2, 11));
     objects.push_back(Object(3, 17)); objects.push_back(Object(4, 3));

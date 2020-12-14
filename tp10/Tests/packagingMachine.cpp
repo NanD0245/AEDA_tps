@@ -22,74 +22,68 @@ HeapBox PackagingMachine::getBoxes() const {
 }
 
 
+#include <set>
 unsigned PackagingMachine::loadObjects(vector<Object> &objs) {
-    unsigned count = 0;
-    vector<std::size_t> erase;
-	for (size_t i = 0; i < objs.size(); i++) {
+    set<int,greater<int>> index;
+    for (size_t i = 0; i < objs.size(); i++) {
         if (objs[i].getWeight() <= boxCapacity) {
+            index.insert(i);
             objects.push(objs[i]);
-            erase.push_back(i);
-            count++;
         }
     }
-	sort(erase.begin(),erase.end(),[](std::size_t i1, std::size_t i2) { return i1 > i2; });
-	for (size_t i : erase)
-	    objs.erase(objs.begin()+i);
-	return count;
+    for (int num: index)
+        objs.erase(objs.begin()+num);
+	return objects.size();
 }
 
 Box PackagingMachine::searchBox(Object& obj) {
 	Box b;
-	vector<Box> storeBoxes;
+	HeapBox boxes_store;
 	while (!boxes.empty() && boxes.top().getFree() < obj.getWeight()) {
-	    storeBoxes.push_back(boxes.top());
-	    boxes.pop();
+        boxes_store.push(boxes.top());
+        boxes.pop();
 	}
 	if (!boxes.empty()) {
-	    b = boxes.top();
-	    boxes.pop();
-	}
-	for (const Box& box : storeBoxes) {
-	    boxes.push(box);
+        b = boxes.top();
+        boxes.pop();
+    }
+	while (!boxes_store.empty()) {
+	    boxes.push(boxes_store.top());
+	    boxes_store.pop();
 	}
 	return b;
 }
 
 unsigned PackagingMachine::packObjects() {
-    vector<unsigned> ids;
-
-    while (!objects.empty()) {
+    while(!objects.empty()) {
         Object obj = objects.top();
+        Box b = searchBox(obj);
+        b.addObject(obj);
+        boxes.push(b);
         objects.pop();
-        Box bx = searchBox(obj);
-        bx.addObject(obj);
-        boxes.push(bx);
     }
-
-    return boxes.size();
+	return boxes.size();
 }
 
 string PackagingMachine::printObjectsNotPacked() const {
-    ostringstream oss;
-    if (objects.empty()) oss << "No objects!" << endl;
-
-	HeapObj objs = objects;
-	while (!objs.empty()) {
-	    oss << objs.top() << endl;
-	    objs.pop();
-	}
-	return oss.str();
+    if (objects.empty()) return "No objects!\n";
+    ostringstream ss;
+    HeapObj objs = objects;
+    while (!objs.empty()) {
+        ss << objs.top() << endl;
+        objs.pop();
+    }
+	return ss.str();
 }
 
 Box PackagingMachine::boxWithMoreObjects() const {
     if (boxes.empty()) throw MachineWithoutBoxes();
-    HeapBox bxs = boxes;
-    Box b = bxs.top();
-    bxs.pop();
-    while (!bxs.empty()) {
-        if (b.getSize() < bxs.top().getSize())
-            b = bxs.top();
-        bxs.pop();
-    }
-    return b;
+    HeapBox boxes_store = boxes;
+	Box b;
+	while (!boxes_store.empty()) {
+	    if (boxes_store.top().getSize() > b.getSize())
+	        b = boxes_store.top();
+	    boxes_store.pop();
+	}
+	return b;
 }

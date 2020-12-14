@@ -68,10 +68,10 @@ RM = /home/mim/Documents/CLion/clion-2020.1.1/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09
+CMAKE_SOURCE_DIR = /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -146,9 +146,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/cmake-build-debug/CMakeFiles /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/cmake-build-debug/CMakeFiles /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,7 +225,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/build.make lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -238,7 +238,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f lib/googletest-master/googletest/CMakeFiles/gtest.dir/build.make lib/googletest-master/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 Tests/bet.o: Tests/bet.cpp.o

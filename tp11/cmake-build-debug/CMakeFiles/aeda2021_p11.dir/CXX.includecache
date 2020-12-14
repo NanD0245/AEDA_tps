@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/disjointSets.cpp
+disjointSets.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/disjointSets.h
+algorithm
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/disjointSets.h
+vector
+-
+unordered_set
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/maze.cpp
+maze.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/maze.h
+iostream
+-
+iomanip
+-
+utility
+-
+algorithm
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/maze.h
+disjointSets.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp11/Tests/disjointSets.h
+

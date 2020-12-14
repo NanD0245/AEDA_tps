@@ -4,23 +4,23 @@
 using namespace std;
 
 
-bool Bet::contains(unsigned num) const {return !(numbers.find(num)==numbers.end());}
+bool Bet::contains(unsigned num) const
+{
+	return numbers.find(num) != numbers.end();
+}
 
 void Bet::generateBet(const vector<unsigned>& values, unsigned n)
 {
-    for (unsigned int value : values) {
-        if (n == 0) return;
-        if (numbers.find(value) == numbers.end()) {
-            numbers.insert(value);
-            n--;
-        }
-    }
+    for (size_t i = 0; numbers.size() < n; i++)
+        numbers.insert(values[i]);
 }
 
 unsigned Bet::countRights(const tabHInt& draw) const
 {
     unsigned count = 0;
-    for (unsigned int number : numbers)
-        if (draw.find(number) != draw.end()) count++;
+    for (unsigned result: draw)
+        for (unsigned number: numbers)
+            if (number == result)
+                count++;
 	return count;
 }

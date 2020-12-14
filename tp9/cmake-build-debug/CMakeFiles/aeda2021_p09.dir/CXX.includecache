@@ -11,9 +11,15 @@ errno.h
 -
 algorithm
 -
+functional
+-
 memory
 -
 string
+-
+tuple
+-
+type_traits
 -
 utility
 -
@@ -21,10 +27,8 @@ gmock/internal/gmock-internal-utils.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
 gmock/internal/gmock-port.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
-functional
--
-type_traits
--
+gmock/internal/gmock-pp.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-pp.h
 
 ../lib/googletest-master/googlemock/include/gmock/gmock-cardinalities.h
 limits.h
@@ -39,8 +43,14 @@ gtest/gtest.h
 ../lib/googletest-master/googlemock/include/gmock/gtest/gtest.h
 
 ../lib/googletest-master/googlemock/include/gmock/gmock-function-mocker.h
-gmock/gmock-generated-function-mockers.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-function-mockers.h
+type_traits
+-
+utility
+-
+gmock/gmock-spec-builders.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-spec-builders.h
+gmock/internal/gmock-internal-utils.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
 gmock/internal/gmock-pp.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-pp.h
 
@@ -56,40 +66,12 @@ gmock/internal/gmock-port.h
 gmock/internal/custom/gmock-generated-actions.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/custom/gmock-generated-actions.h
 
-../lib/googletest-master/googlemock/include/gmock/gmock-generated-function-mockers.h
-utility
--
-gmock/gmock-spec-builders.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-spec-builders.h
-gmock/internal/gmock-internal-utils.h
-../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
-functional
--
-
-../lib/googletest-master/googlemock/include/gmock/gmock-generated-matchers.h
-iterator
--
-sstream
--
-string
--
-utility
--
-vector
--
-gmock/gmock-matchers.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-matchers.h
-
-../lib/googletest-master/googlemock/include/gmock/gmock-generated-nice-strict.h
-gmock/gmock-spec-builders.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-spec-builders.h
-gmock/internal/gmock-port.h
-../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
-
 ../lib/googletest-master/googlemock/include/gmock/gmock-matchers.h
-math.h
--
 algorithm
+-
+cmath
+-
+initializer_list
 -
 iterator
 -
@@ -113,24 +95,26 @@ gmock/internal/gmock-internal-utils.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
 gmock/internal/gmock-port.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
+gmock/internal/gmock-pp.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-pp.h
 gtest/gtest.h
 ../lib/googletest-master/googlemock/include/gmock/gtest/gtest.h
-initializer_list
--
 gmock/internal/custom/gmock-matchers.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/custom/gmock-matchers.h
 
-../lib/googletest-master/googlemock/include/gmock/gmock-more-actions.h
-algorithm
--
-gmock/gmock-generated-actions.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-actions.h
-
 ../lib/googletest-master/googlemock/include/gmock/gmock-more-matchers.h
-gmock/gmock-generated-matchers.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-matchers.h
+gmock/gmock-matchers.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-matchers.h
+
+../lib/googletest-master/googlemock/include/gmock/gmock-nice-strict.h
+gmock/gmock-spec-builders.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-spec-builders.h
+gmock/internal/gmock-port.h
+../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-port.h
 
 ../lib/googletest-master/googlemock/include/gmock/gmock-spec-builders.h
+functional
+-
 map
 -
 memory
@@ -140,6 +124,8 @@ set
 sstream
 -
 string
+-
+type_traits
 -
 utility
 -
@@ -169,18 +155,12 @@ gmock/gmock-function-mocker.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/gmock-function-mocker.h
 gmock/gmock-generated-actions.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-actions.h
-gmock/gmock-generated-function-mockers.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-function-mockers.h
-gmock/gmock-generated-matchers.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-matchers.h
-gmock/gmock-generated-nice-strict.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-generated-nice-strict.h
 gmock/gmock-matchers.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/gmock-matchers.h
-gmock/gmock-more-actions.h
-../lib/googletest-master/googlemock/include/gmock/gmock/gmock-more-actions.h
 gmock/gmock-more-matchers.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/gmock-more-matchers.h
+gmock/gmock-nice-strict.h
+../lib/googletest-master/googlemock/include/gmock/gmock/gmock-nice-strict.h
 gmock/internal/gmock-internal-utils.h
 ../lib/googletest-master/googlemock/include/gmock/gmock/internal/gmock-internal-utils.h
 
@@ -190,10 +170,6 @@ gmock/internal/gmock-internal-utils.h
 
 ../lib/googletest-master/googlemock/include/gmock/internal/custom/gmock-port.h
 
-../lib/googletest-master/googlemock/include/gmock/internal/gmock-generated-internal-utils.h
-gmock/internal/gmock-port.h
-../lib/googletest-master/googlemock/include/gmock/internal/gmock/internal/gmock-port.h
-
 ../lib/googletest-master/googlemock/include/gmock/internal/gmock-internal-utils.h
 stdio.h
 -
@@ -201,8 +177,8 @@ ostream
 -
 string
 -
-gmock/internal/gmock-generated-internal-utils.h
-../lib/googletest-master/googlemock/include/gmock/internal/gmock/internal/gmock-generated-internal-utils.h
+type_traits
+-
 gmock/internal/gmock-port.h
 ../lib/googletest-master/googlemock/include/gmock/internal/gmock/internal/gmock-port.h
 gtest/gtest.h
@@ -212,6 +188,8 @@ gtest/gtest.h
 assert.h
 -
 stdlib.h
+-
+cstdint
 -
 iostream
 -
@@ -233,6 +211,8 @@ ostream
 -
 string
 -
+type_traits
+-
 gtest/gtest-printers.h
 ../lib/googletest-master/googletest/include/gtest/gtest/gtest-printers.h
 gtest/internal/gtest-internal.h
@@ -245,20 +225,22 @@ limits
 -
 memory
 -
+sstream
+-
 gtest/internal/gtest-port.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-port.h
 
 ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
-gtest/internal/gtest-port.h
-../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-port.h
+iterator
+-
 utility
 -
 gtest/internal/gtest-internal.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-param-util.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-param-util.h
-gtest/internal/gtest-param-util-generated.h
-../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-param-util-generated.h
+gtest/internal/gtest-port.h
+../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-port.h
 
 ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
 functional
@@ -283,10 +265,6 @@ gtest/internal/gtest-port.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-port.h
 absl/strings/string_view.h
 ../lib/googletest-master/googletest/include/gtest/absl/strings/string_view.h
-absl/types/optional.h
-../lib/googletest-master/googletest/include/gtest/absl/types/optional.h
-absl/types/variant.h
-../lib/googletest-master/googletest/include/gtest/absl/types/variant.h
 gtest/internal/custom/gtest-printers.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/custom/gtest-printers.h
 
@@ -301,17 +279,23 @@ gtest/internal/gtest-string.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-string.h
 
 ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+gtest/internal/gtest-internal.h
+../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-port.h
 gtest/internal/gtest-type-util.h
 ../lib/googletest-master/googletest/include/gtest/gtest/internal/gtest-type-util.h
 
 ../lib/googletest-master/googletest/include/gtest/gtest.h
+cstddef
+-
 limits
 -
 memory
 -
 ostream
+-
+type_traits
 -
 vector
 -
@@ -381,6 +365,8 @@ float.h
 -
 string.h
 -
+cstdint
+-
 iomanip
 -
 limits
@@ -390,6 +376,8 @@ map
 set
 -
 string
+-
+type_traits
 -
 vector
 -
@@ -402,18 +390,10 @@ gtest/internal/gtest-string.h
 gtest/internal/gtest-type-util.h
 ../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/gtest-type-util.h
 
-../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
-assert.h
--
-memory
--
-gtest/internal/gtest-param-util.h
-../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/gtest-param-util.h
-gtest/internal/gtest-port.h
-../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/gtest-port.h
-
 ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
 ctype.h
+-
+cassert
 -
 iterator
 -
@@ -422,6 +402,8 @@ memory
 set
 -
 tuple
+-
+type_traits
 -
 utility
 -
@@ -433,6 +415,8 @@ gtest/internal/gtest-port.h
 ../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/gtest-port.h
 gtest/gtest-printers.h
 ../lib/googletest-master/googletest/include/gtest/internal/gtest/gtest-printers.h
+gtest/gtest-test-part.h
+../lib/googletest-master/googletest/include/gtest/internal/gtest/gtest-test-part.h
 
 ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
 winapifamily.h
@@ -449,7 +433,13 @@ stdlib.h
 -
 string.h
 -
-memory
+cerrno
+-
+cstdint
+-
+limits
+-
+type_traits
 -
 sys/types.h
 -
@@ -459,24 +449,22 @@ AvailabilityMacros.h
 -
 TargetConditionals.h
 -
-string
--
-algorithm
--
 iostream
 -
-sstream
+locale
+-
+memory
+-
+string
 -
 tuple
 -
-utility
--
 vector
 -
-gtest/internal/gtest-port-arch.h
-../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/gtest-port-arch.h
 gtest/internal/custom/gtest-port.h
 ../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/custom/gtest-port.h
+gtest/internal/gtest-port-arch.h
+../lib/googletest-master/googletest/include/gtest/internal/gtest/internal/gtest-port-arch.h
 direct.h
 -
 io.h
@@ -495,11 +483,29 @@ pthread.h
 -
 time.h
 -
+absl/types/any.h
+../lib/googletest-master/googletest/include/gtest/internal/absl/types/any.h
+any
+-
+absl/types/optional.h
+../lib/googletest-master/googletest/include/gtest/internal/absl/types/optional.h
+optional
+-
+absl/strings/string_view.h
+../lib/googletest-master/googletest/include/gtest/internal/absl/strings/string_view.h
+string_view
+-
+absl/types/variant.h
+../lib/googletest-master/googletest/include/gtest/internal/absl/types/variant.h
+variant
+-
 
 ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 mem.h
 -
 string.h
+-
+cstdint
 -
 string
 -
@@ -514,7 +520,15 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/bet.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/bet.cpp
+bet.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/bet.h
+iostream
+-
+sstream
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/bet.h
 unordered_set
 -
 vector
@@ -522,21 +536,17 @@ vector
 string
 -
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/player.cpp
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/player.cpp
 player.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/player.h
-iostream
--
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/player.h
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/player.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/player.h
 bet.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/bet.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/bet.h
 string
 -
-iostream
--
 
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/tests.cpp
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/tests.cpp
 gtest/gtest.h
 -
 gmock/gmock.h
@@ -544,7 +554,13 @@ gmock/gmock.h
 vector
 -
 bet.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/bet.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/bet.h
 player.h
-/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp9/aeda2021_p09/Tests/player.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/Tests/player.h
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/main.cpp
+gtest/gtest.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/gtest/gtest.h
+gmock/gmock.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/AEDA_tps/tp9/gmock/gmock.h
 

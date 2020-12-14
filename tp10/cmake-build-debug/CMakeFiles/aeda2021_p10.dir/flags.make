@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/lib/googletest-master/googlemock/include -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/lib/googletest-master/googletest/include -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/tp10/aeda2021_p10/lib/googletest-master/googletest 
+CXX_INCLUDES = -I/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/lib/googletest-master/googlemock/include -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/lib/googletest-master/googletest/include -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/estudo/priority/aeda2021_p10/lib/googletest-master/googletest 
 
