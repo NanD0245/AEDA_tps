@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/Account.h
+string
+-
+iostream
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/Bank.cpp
+Bank.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/Bank.h
+algorithm
+-
+string
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/Bank.h
+Account.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/Account.h
+vector
+-
+BankOfficer.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/BankOfficer.h
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/BankOfficer.h
+Account.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1819_ci1_googleTest/Tests/Account.h
+string
+-
+vector
+-
+

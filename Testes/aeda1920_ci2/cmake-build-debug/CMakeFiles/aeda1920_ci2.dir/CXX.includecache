@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Box.h
+Object.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Object.h
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Object.h
+iostream
+-
+string
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/ThinTallBox.h
+stack
+-
+Box.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Box.h
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Warehouse.cpp
+Warehouse.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Warehouse.h
+algorithm
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Warehouse.h
+queue
+-
+Box.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Box.h
+Object.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/Object.h
+ThinTallBox.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/AEDA/Testes/aeda1920_ci2/Tests/ThinTallBox.h
+

@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/Gallery.cpp
+Gallery.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/Gallery.h
+ostream
+-
+algorithm
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/Gallery.h
+bst.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/bst.h
+vector
+-
+unordered_set
+-
+queue
+-
+Paint.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/Paint.h
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/Paint.h
+string
+-
+ostream
+-
+
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1920_ci3/Tests/bst.h
+iostream
+-
+stack
+-
+queue
+-
+
