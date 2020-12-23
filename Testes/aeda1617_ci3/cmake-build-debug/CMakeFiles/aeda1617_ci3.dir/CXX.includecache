@@ -516,7 +516,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/BST.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/BST.h
 iostream
 -
 stack
@@ -524,27 +524,23 @@ stack
 queue
 -
 
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/Book.cpp
-Book.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/Book.h
-
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/Book.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/Book.h
 User.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/User.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/User.h
 string
 -
 
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/ReadingClub.cpp
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/ReadingClub.cpp
 ReadingClub.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/ReadingClub.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/ReadingClub.h
 
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/ReadingClub.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/ReadingClub.h
 Book.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/Book.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/Book.h
 User.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/User.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/User.h
 BST.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/BST.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/BST.h
 vector
 -
 tr1/unordered_set
@@ -552,11 +548,7 @@ tr1/unordered_set
 queue
 -
 
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/User.cpp
-User.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/User.h
-
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/User.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/User.h
 string
 -
 vector
@@ -564,25 +556,19 @@ vector
 utility
 -
 
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/tests.cpp
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/tests.cpp
 gtest/gtest.h
 -
 gmock/gmock.h
 -
 Book.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/Book.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/Book.h
 User.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/User.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/User.h
 ReadingClub.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/Tests/ReadingClub.h
+/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1617_ci3/Tests/ReadingClub.h
 vector
 -
 iostream
 -
-
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/main.cpp
-gtest/gtest.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/gtest/gtest.h
-gmock/gmock.h
-C:/Users/nrtc/Desktop/FEUP/AEDA/feup-aeda/aeda1617_ci3/gmock/gmock.h
 

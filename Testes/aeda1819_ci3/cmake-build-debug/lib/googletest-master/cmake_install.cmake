@@ -1,4 +1,4 @@
-# Install script for directory: /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3_googleTest/lib/googletest-master
+# Install script for directory: /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3/lib/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3_googleTest/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
+  include("/home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

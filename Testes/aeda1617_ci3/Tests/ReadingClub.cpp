@@ -90,23 +90,46 @@ void ReadingClub::setBestReaderCandidates(priority_queue<User>& candidates) {
 //
 
 void ReadingClub::generateCatalog() {
-	//TODO:
-	//...
-
+    for (Book* book : books) {
+        BookCatalogItem a(book->getTitle(),book->getAuthor(),book->getYear());
+        a.addItems(book);
+        bool check = false;
+        for (auto it = BSTItrIn<BookCatalogItem>(catalogItems); !it.isAtEnd(); it.advance()) {
+            if (it.retrieve() == a) {
+                it.retrieve().addItems(book);
+                check = true;
+            }
+        }
+        if (!check)
+            catalogItems.insert(a);
+    }
 }
 
 vector<Book*> ReadingClub::getAvailableItems(Book* book) const {
 	vector<Book*> temp;
-	//TODO:
-	//...
-
+	for (Book* bok : books)
+	    if (bok->getTitle() == book->getTitle() && bok->getAuthor() == book->getAuthor() && bok->getReader() == nullptr)
+	        temp.push_back(bok);
+	/*for (auto it = BSTItrIn<BookCatalogItem>(catalogItems); !it.isAtEnd(); it.advance()) {
+	    for (Book* bok : it.retrieve().getItems())
+            if (bok->getTitle() == book->getTitle() && bok->getAuthor() == book->getAuthor() && bok->getReader() == nullptr)
+                temp.push_back(bok);
+	}*/
 	return temp;
 }
 
 bool ReadingClub::borrowBookFromCatalog(Book* book, User* reader) {
-	//TODO:
-	//...
-
+    BookCatalogItem a(book->getTitle(),book->getAuthor(), book->getYear());
+	for (auto it = BSTItrIn<BookCatalogItem>(catalogItems); !it.isAtEnd(); it.advance()) {
+	    if (it.retrieve() == a) {
+	        for (Book* bok: it.retrieve().getItems())
+	            if (bok->getReader() == nullptr) {
+                    bok->setReader(reader);
+                    reader->addReading(book->getTitle(), book->getAuthor());
+                    return true;
+                }
+	    }
+	}
 	return false;
 }
 
@@ -116,15 +139,19 @@ bool ReadingClub::borrowBookFromCatalog(Book* book, User* reader) {
 //
 
 void ReadingClub::addUserRecord(User* user) {
-	//TODO:
-	//...
-
+    userRecords.insert(user);
 }
 
-void ReadingClub::changeUserEMail(User* user, string newEMail) {
-	//TODO:
-	//...
-
+void ReadingClub::changeUserEMail(User* user, const string& newEMail) {
+	for (auto it = userRecords.begin(); it != userRecords.end(); it++) {
+	    if (it->getEMail() == user->getEMail()) {
+	        UserRecord a = *it;
+	        a.setEMail(newEMail);
+	        userRecords.erase(it);
+	        userRecords.insert(a);
+	        return;
+	    }
+	}
 }
 
 
@@ -133,16 +160,25 @@ void ReadingClub::changeUserEMail(User* user, string newEMail) {
 //
 
 void ReadingClub::addBestReaderCandidates(const vector<User>& candidates, int min) {
-	//TODO:
-	//...
-
+	for (const User& user: candidates)
+	    if (user.numReadings() >= min)
+	        readerCandidates.push(user);
 }
 
 int ReadingClub::awardReaderChampion(User& champion) {
-	//TODO:
-	//...
-
-	return 0;
+	if (readerCandidates.empty())
+	    return 0;
+	priority_queue<User> rc = readerCandidates;
+	User a = rc.top();
+	rc.pop();
+	if (rc.empty()) {
+	    champion = a;
+	    return 1;
+	}
+	if (a.numReadings() == rc.top().numReadings())
+	    return 0;
+	champion = a;
+	return (int)rc.size()+1;
 }
 
 

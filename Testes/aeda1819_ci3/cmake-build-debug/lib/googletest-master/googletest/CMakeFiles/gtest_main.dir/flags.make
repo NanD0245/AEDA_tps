@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTH
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3_googleTest/lib/googletest-master/googletest/include -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3_googleTest/lib/googletest-master/googletest 
+CXX_INCLUDES = -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3/lib/googletest-master/googletest/include -isystem /home/mim/Documents/FEUP/2ano/Cadeiras/1Semestre/AEDA/Testes/aeda1819_ci3/lib/googletest-master/googletest 
 

@@ -1,13 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/aeda1617_ci3.dir/Tests/Book.cpp.obj"
-  "CMakeFiles/aeda1617_ci3.dir/Tests/ReadingClub.cpp.obj"
-  "CMakeFiles/aeda1617_ci3.dir/Tests/User.cpp.obj"
-  "CMakeFiles/aeda1617_ci3.dir/Tests/tests.cpp.obj"
-  "CMakeFiles/aeda1617_ci3.dir/main.cpp.obj"
-  "aeda1617_ci3.exe"
-  "aeda1617_ci3.exe.manifest"
+  "CMakeFiles/aeda1617_ci3.dir/Tests/Book.cpp.o"
+  "CMakeFiles/aeda1617_ci3.dir/Tests/ReadingClub.cpp.o"
+  "CMakeFiles/aeda1617_ci3.dir/Tests/User.cpp.o"
+  "CMakeFiles/aeda1617_ci3.dir/Tests/tests.cpp.o"
+  "CMakeFiles/aeda1617_ci3.dir/main.cpp.o"
+  "aeda1617_ci3"
   "aeda1617_ci3.pdb"
-  "libaeda1617_ci3.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -21,18 +21,16 @@ struct userRecordHash
 {
 	int operator() (const UserRecord& ur) const
 	{
-		//TODO:
-		//...
-
-		return 0;
+		int v = 0;
+		for (char i: ur.getEMail()) {
+		    v = 37*v + i;
+        }
+		return v;
 	}
 
 	bool operator() (const UserRecord& ur1, const UserRecord& ur2) const
 	{
-		//TODO:
-		//...
-
-		return false;
+		return ur1.getEMail() == ur2.getEMail();
 	}
 };
 
@@ -69,7 +67,7 @@ public:
 
 	// Part II  - Hash Table
 	/* D */ void addUserRecord(User* user);
-	/* E */ void changeUserEMail(User* user, string newEMail);
+	/* E */ void changeUserEMail(User* user, const string& newEMail);
 
 	// Part III - Piority Queue
 	/* F */ void addBestReaderCandidates(const vector<User>& candidates, int min);

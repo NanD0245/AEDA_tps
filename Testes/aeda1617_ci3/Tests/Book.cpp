@@ -63,15 +63,13 @@ void BookCatalogItem::addItems(Book* book) {
 //
 
 bool BookCatalogItem::operator<(const BookCatalogItem &bci1) const {
-	//TODO:
-	//...
-
+	if (title < bci1.getTitle())
+	    return true;
+	else if (title == bci1.getTitle() && author < bci1.getAuthor())
+	    return true;
 	return false;
 }
 
 bool BookCatalogItem::operator==(const BookCatalogItem &bci1) const {
-	//TODO:
-	//...
-
-	return false;
+	return title == bci1.getTitle() && author == bci1.getAuthor();
 }
